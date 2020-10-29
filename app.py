@@ -27,7 +27,7 @@ for tests in test.iterrows():
     
     
     for trains in train.iterrows():
-        trains=trains[1] #removing index values
+        trains=trains[1] #removing index values (i.e, the first column)
         for index,value in enumerate(trains):
             if value==tests[index] and trains[-1]==tests[-1]:
                 probability[index]+=1  #addition of conditional sample space
